@@ -9,6 +9,10 @@ namespace FizzBuzz
     {
         public string GetFizzBuzz(int number){
 
+            if(number<0){
+                return "Give a positive number";
+            }
+
             return number.ToString();
 
         }
