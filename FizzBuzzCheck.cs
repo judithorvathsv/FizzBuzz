@@ -7,10 +7,17 @@ namespace FizzBuzz
 {
     public class FizzBuzzCheck
     {
-        public string GetFizzBuzz(int number){
+        public string GetFizzBuzz(int number)
+        {
 
-            if(number<0){
+            if (number < 0)
+            {
                 return "Give a positive number";
+            }
+
+            if (number % 3 == 0)
+            {
+                return "Fizz";
             }
 
             return number.ToString();
